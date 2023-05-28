@@ -8,8 +8,8 @@ document.querySelector(`.score`).textContent = 10;
 
 document.querySelector(`.guess`).value = 23;
 */
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
+let score = 10;
 let highScore = 0;
 function displayMessage(message) {
   document.querySelector(`.message`).textContent = message;
@@ -52,8 +52,8 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
 });
 
 document.querySelector(`.again`).addEventListener(`click`, function () {
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
-  score = 20;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
+  score = 10;
   displayScore(score);
   displayMessage(`Start Guessing...`);
   displayNumber(`?`);
